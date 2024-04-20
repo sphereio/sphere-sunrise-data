@@ -22,6 +22,7 @@
     "import:customers": "npm run build && node dist/lib/customers.js --import",
     "import:types": "npm run build && node dist/lib/types.js --import",
     "import:states": "npm run build && node dist/lib/lineitem-states.js --import",
+    "import:standalonePrice": "npm run build && node dist/lib/standalonePrice.js --import --csv ./data/standalonePrice.csv",
     "clean:categories": "npm run build && node dist/lib/categories.js --clean",
     "clean:inventory": "npm run build && node dist/lib/inventory.js --clean",
     "clean:channels": "npm run build && node dist/lib/channels.js --clean",
@@ -34,6 +35,7 @@
     "clean:products": "npm run build && node dist/lib/products.js --clean",
     "clean:taxCategories": "npm run build && node dist/lib/tax-categories.js --clean",
     "clean:types": "npm run build && node dist/lib/types.js --clean",
+    "clean:standalonePrice": "npm run build && node dist/lib/standalonePrice.js --clean",
     "start": "npm run build && node dist/lib/data.js --start",
     "lint": "prettier --write ./lib/** && eslint --fix ./lib/**"
   },
